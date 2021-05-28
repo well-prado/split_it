@@ -20,8 +20,7 @@ class LoginController {
       state = LoginStateLoading();
       onUpdate();
       final account = await _googleSignIn.signIn();
-      user = UserModel.google(account!);
-      state = LoginStateSuccess(user: user!);
+      state = LoginStateSuccess(user: UserModel.google(account!));
       onUpdate();
     } catch (error) {
       state = LoginStateFailure(message: error.toString());
