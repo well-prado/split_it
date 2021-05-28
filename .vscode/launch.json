@@ -21,6 +21,12 @@
       "request": "launch",
       "type": "dart",
       "args": ["-d", "95B3295B-A67A-4C9E-A4F2-D7B77108F119"]
+    },
+    {
+      "name": "Samsung Online",
+      "request": "launch",
+      "type": "dart",
+      "args": ["-d", "192.168.3.75:5555"]
     }
   ]
 }
