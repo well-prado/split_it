@@ -15,6 +15,12 @@
       "request": "launch",
       "type": "dart",
       "args": ["-d", "RXCN800MZGJ"]
+    },
+    {
+      "name": "iPhone 8 Plus - Emulador",
+      "request": "launch",
+      "type": "dart",
+      "args": ["-d", "95B3295B-A67A-4C9E-A4F2-D7B77108F119"]
     }
   ]
 }
