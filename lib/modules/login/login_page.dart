@@ -4,7 +4,7 @@ import 'package:split_it/modules/login/login_controller.dart';
 import 'package:split_it/modules/login/login_service.dart';
 import 'package:split_it/modules/login/login_state.dart';
 import 'package:split_it/modules/login/widgets/social_button.dart';
-import 'package:split_it/modules/login_widget_animation.dart';
+import 'package:split_it/modules/login/widgets/login_widget_animation.dart';
 import 'package:split_it/theme/app_theme.dart';
 
 class LoginPage extends StatefulWidget {
