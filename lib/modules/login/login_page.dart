@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:sign_in_with_apple/sign_in_with_apple.dart';
+// import 'package:sign_in_with_apple/sign_in_with_apple.dart';
 import 'package:split_it/modules/login/login_controller.dart';
 import 'package:split_it/modules/login/login_service.dart';
 import 'package:split_it/modules/login/login_state.dart';
 import 'package:split_it/modules/login/widgets/social_button.dart';
+import 'package:split_it/modules/login_widget_animation.dart';
 import 'package:split_it/theme/app_theme.dart';
 
 class LoginPage extends StatefulWidget {
@@ -87,20 +88,23 @@ class _LoginPageState extends State<LoginPage> {
                 child: SocialButtonWidget(
                   imagePath: "assets/images/apple_icon.png",
                   label: "Entrar com Apple",
-                  onTap: () async {
-                    try {
-                      final credential =
-                          await SignInWithApple.getAppleIDCredential(
-                        scopes: [
-                          AppleIDAuthorizationScopes.email,
-                          AppleIDAuthorizationScopes.fullName,
-                        ],
-                      );
-                      print(credential);
-                    } catch (e) {
-                      print(e);
-                    }
+                  onTap: () {
+                    Navigator.pushReplacementNamed(context, "/loginanimated");
                   },
+                  // onTap: () async {
+                  //   try {
+                  //     final credential =
+                  //         await SignInWithApple.getAppleIDCredential(
+                  //       scopes: [
+                  //         AppleIDAuthorizationScopes.email,
+                  //         AppleIDAuthorizationScopes.fullName,
+                  //       ],
+                  //     );
+                  //     print(credential);
+                  //   } catch (e) {
+                  //     print(e);
+                  //   }
+                  // },
                 ),
               ),
             ],
