@@ -27,6 +27,12 @@
       "request": "launch",
       "type": "dart",
       "args": ["-d", "192.168.3.75:5555"]
+    },
+    {
+      "name": "iPhone 11 Pro Max - Emulador",
+      "request": "launch",
+      "type": "dart",
+      "args": ["-d", "1B82FB85-C0FA-41DD-85CA-AD1FBFD08E71"]
     }
   ]
 }
