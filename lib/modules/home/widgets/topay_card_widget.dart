@@ -18,7 +18,40 @@ class ToPayCardWidget extends StatelessWidget {
           ),
         ],
       ),
-      child: Container(),
+      child: Container(
+        padding: EdgeInsets.only(left: 20),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Image.asset(
+              "assets/images/red_dollar.png",
+              height: 48,
+              width: 48,
+            ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "A pagar",
+                  style: TextStyle(color: Colors.grey),
+                ),
+                SizedBox(
+                  height: 5,
+                ),
+                Text(
+                  "R\$48,00",
+                  style: TextStyle(
+                    color: Colors.red,
+                    fontSize: 24,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
