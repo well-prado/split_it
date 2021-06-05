@@ -12,6 +12,9 @@ abstract class AppTextStyles {
   TextStyle get eventTileMoney;
   TextStyle get eventTilePeople;
   TextStyle get eventTileSubtitle;
+  TextStyle get stepperIndicatorPrimary;
+  TextStyle get stepperIndicatorSecondary;
+  TextStyle get stepperNextButton;
 }
 
 class AppTextStylesDefault implements AppTextStyles {
@@ -73,5 +76,24 @@ class AppTextStylesDefault implements AppTextStyles {
         color: AppTheme.colors.eventTileTitle,
         fontSize: 16,
         fontWeight: FontWeight.w600,
+      );
+
+  @override
+  TextStyle get stepperIndicatorPrimary => GoogleFonts.roboto(
+      color: AppTheme.colors.stepperIndicatorPrimary,
+      fontSize: 14,
+      fontWeight: FontWeight.w700);
+
+  @override
+  TextStyle get stepperIndicatorSecondary => GoogleFonts.roboto(
+      color: AppTheme.colors.stepperIndicatorSecondary,
+      fontSize: 14,
+      fontWeight: FontWeight.w400);
+
+  @override
+  TextStyle get stepperNextButton => GoogleFonts.inter(
+        color: AppTheme.colors.stepperNextbutton,
+        fontSize: 12,
+        fontWeight: FontWeight.w500,
       );
 }
