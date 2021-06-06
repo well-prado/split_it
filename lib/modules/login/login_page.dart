@@ -43,9 +43,9 @@ class _LoginPageState extends State<LoginPage> {
             child: Row(
               children: [
                 Container(
-                  width: 232,
+                  width: 238,
                   child: Text(
-                    "Divida suas contas com seus amigos",
+                    "Divida \nsuas contas com seus amigos",
                     style: AppTheme.textStyles.title,
                   ),
                 ),
@@ -61,6 +61,7 @@ class _LoginPageState extends State<LoginPage> {
                   minLeadingWidth: 50,
                   title: Text(
                     "Faça seu login com uma das contas abaixo",
+                    textAlign: TextAlign.left,
                     style: AppTheme.textStyles.button,
                   ),
                 ),

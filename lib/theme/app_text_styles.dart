@@ -15,6 +15,12 @@ abstract class AppTextStyles {
   TextStyle get stepperIndicatorPrimary;
   TextStyle get stepperIndicatorSecondary;
   TextStyle get stepperNextButton;
+  TextStyle get stepperNextButtonDisabled;
+  TextStyle get stepperTitle;
+  TextStyle get stepperSubtitle;
+  TextStyle get textField;
+  TextStyle get hintTextField;
+  TextStyle get stepperAddButton;
 }
 
 class AppTextStylesDefault implements AppTextStyles {
@@ -22,6 +28,7 @@ class AppTextStylesDefault implements AppTextStyles {
   TextStyle get button => GoogleFonts.inter(
         color: AppTheme.colors.button,
         fontSize: 16,
+        height: 1.5,
       );
 
   @override
@@ -92,8 +99,50 @@ class AppTextStylesDefault implements AppTextStyles {
 
   @override
   TextStyle get stepperNextButton => GoogleFonts.inter(
-        color: AppTheme.colors.stepperNextbutton,
+        color: AppTheme.colors.stepperNextButton,
         fontSize: 12,
         fontWeight: FontWeight.w500,
+      );
+
+  @override
+  TextStyle get stepperNextButtonDisabled => GoogleFonts.inter(
+        color: AppTheme.colors.stepperNextButtonDisabled.withOpacity(0.2),
+        fontSize: 12,
+        fontWeight: FontWeight.w500,
+      );
+
+  @override
+  TextStyle get stepperTitle => GoogleFonts.inter(
+        color: AppTheme.colors.stepperTitle,
+        fontSize: 24,
+        fontWeight: FontWeight.w700,
+      );
+
+  @override
+  TextStyle get stepperSubtitle => GoogleFonts.inter(
+        color: AppTheme.colors.stepperSubtitle,
+        fontSize: 24,
+        fontWeight: FontWeight.w400,
+      );
+
+  @override
+  TextStyle get textField => GoogleFonts.inter(
+        color: AppTheme.colors.textField,
+        fontSize: 16,
+        fontWeight: FontWeight.w500,
+      );
+
+  @override
+  TextStyle get hintTextField => GoogleFonts.inter(
+        color: AppTheme.colors.hintTextField,
+        fontSize: 16,
+        fontWeight: FontWeight.w400,
+      );
+
+  @override
+  TextStyle get stepperAddButton => GoogleFonts.inter(
+        color: AppTheme.colors.stepperAddButton,
+        fontSize: 16,
+        fontWeight: FontWeight.w400,
       );
 }
